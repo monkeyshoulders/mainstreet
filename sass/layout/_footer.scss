@@ -1,0 +1,32 @@
+.footer {
+  padding: 2rem;
+  background: $color-grey-dark;
+  color: $color-grey-light;
+
+
+  &__copyright {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    text-align: right;
+
+  }
+
+  &__contact {
+    font-size: 2.1rem;
+    text-align: center;
+
+    & p {
+      color: $color-grey-light;
+      padding: .5rem;
+      font-family: "Montserrat;"
+    }
+  }
+
+  & h2 {
+    font-family: 'Muli', sans-serif;
+    padding-bottom: 1rem;
+    // font-family: "Montserrat;"
+
+  }
+
+}

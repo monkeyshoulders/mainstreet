@@ -1,0 +1,160 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.landing__header {
+  color: white;
+  // text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 3rem;
+  display: block;
+  font-size: 6.5rem;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 2px 2px $color-grey;
+  font-family: 'Muli', sans-serif;
+
+  @media (max-width: 1000px) {
+    font-size: 6rem;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 5rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 4.5rem;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 4rem;
+  }
+
+  &-sub {
+    font-size: 1.2em;
+    color: white;
+    text-shadow: none;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    padding: 0 10%;
+    text-align: center;
+    font-family: 'Muli', sans-serif;
+
+    @media (max-width: 900px) {
+      font-size: 1em;
+      padding: 0 5%;
+    }
+  }
+}
+
+.section {
+
+  &__heading {
+    font-family: 'Muli', sans-serif;
+    font-size: 5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 4rem 2rem;
+    color: $color-grey-dark;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-align: left;
+    // z-index: -1;
+
+  }
+    &__info {
+      font-size: 2.5rem;
+      line-height: 1.5;
+      padding: 6rem 20rem;
+      text-align: justify;
+      line-height: 1.8;
+      color: $color-grey-dark;
+      font-family: 'Montserrat', sans-serif;
+
+      @media (max-width: 1500px) {
+        padding: 6rem 15rem;
+      }
+
+      @media (max-width: 1350px) {
+        padding: 6rem 12rem;
+      }
+
+      @media (max-width: 1200px) {
+        padding: 5rem 8rem;
+        font-size: 2.25rem;
+      }
+
+      @media (max-width: 900px) {
+        font-size: 2rem;
+      }
+
+      @media (max-width: 768px) {
+        padding: 5rem;
+        font-size: 1.9rem;
+      }
+
+      @media (max-width: 450px) {
+        padding: 3rem;
+        font-size: 1.5rem;
+      }
+    }
+
+
+
+// Below is the blue line surroinding the headers
+    & span {
+      position: relative;
+      display: inline-block;
+      padding-left: 2rem;
+
+      // &:before {
+      //   content: '';
+      //   position: absolute;
+      //   top: 50%;
+      //   border-bottom: .2rem solid;
+      //   width: 100rem;
+      //   margin: 0 8%;
+      //   right: 100%;
+      //   color: $color-primary;
+      // }
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        border-bottom: .2rem solid;
+        width: 200rem;
+        margin: 0 8%;
+        left: 100%;
+        color: $color-primary;
+        z-index: 1;
+      }
+    }
+  }
+
+
+    // &:before {
+    //   position: absolute;
+    //   top: 51%;
+    //   overflow: hidden;
+    //   width: 50%;
+    //   height: .25rem;
+    //   content: '\a0';
+    //   background-color: $color-primary;
+    //   margin-left: -50%;
+    //   text-align: right;
+    //   padding: 0 5rem;
+    //   }
+    //
+    //  &:after {
+    //    position: absolute;
+    //    top: 51%;
+    //    overflow: hidden;
+    //    width: 50%;
+    //    height: .25rem;
+    //    content: '\a0';
+    //    background-color: $color-primary;
+    // }

@@ -1,0 +1,68 @@
+.team-container {
+  padding: 0;
+  margin: 2% 12% 2% 12%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.headshot-box {
+  background: white;
+  width: 20%;
+  min-width: 200px;
+  height: auto;
+  margin: 1rem;
+  color: white;
+
+  & p {
+    font-family: "Montserrat;"
+    // background-color: $color-grey-light;
+  }
+
+  & .button {
+    text-decoration: none;
+  }
+
+
+  &:hover {
+    background-color: rgba($color-primary, .8);
+    box-shadow: 0 1rem 2rem $color-grey-dark;
+    transform: translateY(-4px);
+    transition: .2s ease-in-out;
+    text-decoration: none;
+
+    & img {
+      border-radius: 0;
+    }
+
+    & p {
+      color: $color-grey-light;
+    }
+  }
+  &:active {
+    box-shadow: 0 .5rem 1rem $color-grey-dark;
+    transform: translateY(-4px);
+    transition: .2s ease-in-out;
+
+  }
+
+  &-image {
+    width: 100%;
+    padding: 1px;
+    border-radius: 50%;
+    //
+    // &:hover {
+    //   border-radius: 0;
+    }
+  // }
+}
+
+.name_card {
+  text-align: center;
+  color: $color-grey-dark;
+  font-size: 2.5rem;
+}

@@ -1,0 +1,117 @@
+.carousel {
+  position: relative;
+  height: 450px;
+  width: 800px;
+  margin: 50px auto 100px auto;
+
+  @media (max-width: 1000px) {
+    height: 300px;
+    width: 600px;
+  }
+
+  @media (max-width: 768px) {
+    height: 300px;
+    width: 500px;
+  }
+
+  @media (max-width: 645px) {
+    height: 275px;
+    width: 425px;
+  }
+
+  @media (max-width: 540px) {
+    height: 225px;
+    width: 300px;
+  }
+
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: all .3s;
+
+    img {
+      width: 25px;
+      height: 25px;
+      
+    }
+  }
+
+  #carousel-left {
+    left: -50px;
+    transform: rotateZ(-90deg);
+
+    @media (max-width: 500px) {
+      left: -30px;
+    }
+  }
+
+  #carousel-right {
+    right: -50px;
+    transform: rotateZ(90deg);
+
+    @media (max-width: 500px) {
+      right: -30px;
+    }
+  }
+
+  .carousel-container {
+    background: lightseagreen;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+
+    .carousel-track {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      position: relative;
+      height: 100%;
+      transition: transform .25s ease-in;
+
+      .carousel-slide {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  #carousel-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+
+    .dot {
+      border: none;
+      height: 12px;
+      width: 12px;
+      border-radius: 50%;
+      background: grey;
+      margin: 0 10px;
+      cursor: pointer;
+
+      @media (max-width: 550px) {
+        height: 8px;
+        width: 8px;
+      }
+    }
+
+    .current-slide {
+      background: dodgerblue;
+    }
+  }
+}
+
+.is-hidden {
+  display: none;
+}

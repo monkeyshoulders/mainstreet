@@ -1,0 +1,30 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /* this will forcefully inherit the box sizing in the parent element (put in body here)  */
+  /* to all child elements */
+}
+
+html {
+  /* font-size: 10px; */
+  /* we do this so when converting to rem it is mathematically very easy... 1rem = 10px */
+  /* but keeping pixles restricts user default font size */
+  // this defines what 1 rem is
+  font-size: 50%;
+  /* we did 10 px (our set) divided by 16 pixels (standard set) */
+}
+
+body {
+  box-sizing: border-box;
+  // padding: 2rem;
+
+  // padding: 2rem;
+  /* this will be set to all elements */
+}
+
+p {
+  font-family: "Lato", sans-serif;
+}
